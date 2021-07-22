@@ -30,7 +30,7 @@ function Paginacion() {
   // la ruta http no funciona con parametros
   const peticionGet =async() =>{
       
-    await axios.get('apiCreditos/paginacion/index.php?documento=1110498191')
+    await axios.get('https://www.creditos.hoztcreative.com/apiCreditos/paginacion/index.php?documento=1110498191')
     .then(response=>{
     setData(response.data);
      console.log(response.data);
